@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 from sobel_edge_detection import sobel_edge_detection
 from non_max_suppression import non_max_suppression
 from threshold_hysteresis import threshold_hysteresis
