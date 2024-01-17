@@ -1,12 +1,8 @@
 import numpy as np
-from gaussian_blur import gaussianBlur
-from to_gray import togray
 from convolution import convolution
 
 
-def sobel_edge_detection(image: np.ndarray, sigma: int | float, image_format: str, filter_shape: int | None):
-    img = togray(image, image_format)
-    blurred = gaussianBlur(img, sigma, filter_shape=filter_shape)[1] / 255
+def sobel_edge_detection(image: np.ndarray, magnitude="euclidean"):
     Kx = np.array(
         [[-1, 0, 1],
          [-2, 0, 2],
@@ -17,9 +13,13 @@ def sobel_edge_detection(image: np.ndarray, sigma: int | float, image_format: st
          [0, 0, 0],
          [-1, -2, -1]], np.float32
     )
-    Ix = convolution(blurred, Kx)
-    Iy = convolution(blurred, Ky)
-    G = np.hypot(Ix, Iy)
+    Ix = convolution(image, Kx)
+    Iy = convolution(image, Ky)
+    G = None
+    if magnitude == "euclidean":
+        G = np.hypot(Ix, Iy)
+    elif magnitude == "absolute":
+        G = np.absolute(Ix) + np.absolute(Iy)
     G = G / G.max() * 255
     theta = np.arctan2(Iy, Ix)
     return np.squeeze(G), np.squeeze(theta)
