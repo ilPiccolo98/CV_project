@@ -6,10 +6,13 @@ def threshold_hysteresis(img: np.ndarray, lowThresholdRatio=0.05, highThresholdR
     M, N = img.shape
     res = np.zeros((M, N), dtype=np.int32)
     strong = np.int32(255)
+    zeros = np.int32(0)
+    zeros_i, zeros_j = np.where(img < lowThreshold)
     strong_i, strong_j = np.where(img >= highThreshold)
     weak_i, weak_j = np.where((img <= highThreshold) & (img >= lowThreshold))
     res[strong_i, strong_j] = strong
     res[weak_i, weak_j] = weak
+    res[zeros_i, zeros_j] = zeros
     for i in range(1, M-1):
         for j in range(1, N-1):
             if (res[i, j] == weak):

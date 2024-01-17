@@ -10,5 +10,5 @@ def ced(image: np.ndarray, image_format='rgb', lowthreshold: float | int = 0.05,
     grayscale_img = togray(image, image_format)
     G, theta = sobel_edge_detection(grayscale_img, "euclidean")
     img = non_max_suppression(G, theta)
-    img = double_threshold(img, lowthreshold, highthreshold)
+    img = threshold_hysteresis(img, lowthreshold, highthreshold)
     return img

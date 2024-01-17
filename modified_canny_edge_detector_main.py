@@ -7,7 +7,9 @@ from mced import mced
 
 path = './orange.jpg'
 img = np.array(Image.open(path))
+print(len(img))
 res = mced(img, 1.5, (10, 10), 'rgb')
+print(len(res))
 plt.subplot(121)
 plt.imshow(img)
 plt.subplot(122)
