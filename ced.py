@@ -1,7 +1,6 @@
 from sobel_edge_detection import sobel_edge_detection
 from non_max_suppression import non_max_suppression
 from threshold_hysteresis import threshold_hysteresis
-from double_threshold import double_threshold
 import numpy as np
 from to_gray import togray
 
