@@ -1,6 +1,6 @@
 import numpy as np
 
-def double_threshold(img: np.ndarray, lowThresholdRatio=0.05, highThresholdRatio=0.09, weak=np.int32(25)):
+def double_threshold(img: np.ndarray, lowThresholdRatio=0.05, highThresholdRatio=0.09):
     highThreshold = img.max() * highThresholdRatio
     lowThreshold = highThreshold * lowThresholdRatio
     
@@ -9,11 +9,15 @@ def double_threshold(img: np.ndarray, lowThresholdRatio=0.05, highThresholdRatio
     
     weak = np.int32(25)
     strong = np.int32(255)
-    
+    zeros = np.int32(0)
+
+    zeros_i, zeros_j = np.where(img < lowThreshold)
+
     strong_i, strong_j = np.where(img >= highThreshold)
     
     weak_i, weak_j = np.where((img <= highThreshold) & (img >= lowThreshold))
     
+    res[zeros_i, zeros_j] = zeros
     res[strong_i, strong_j] = strong
     res[weak_i, weak_j] = weak
     
