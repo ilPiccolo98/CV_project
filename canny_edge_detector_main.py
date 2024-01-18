@@ -34,8 +34,8 @@ for filename in files:
     average_radius = get_average_radius(res, x_center, y_center)
     average_radiuses.append(average_radius)
 
-th_lower_radius = min(average_radiuses)
-th_upper_radius = max(average_radiuses)
+th_lower_radius = min(average_radiuses) - 5
+th_upper_radius = max(average_radiuses) + 5
 th_upper_intensity_diff = max(diff_intensities)
 th_lower_intensity_diff = min(diff_intensities) - 0.05 if (min(diff_intensities) - 0.05) > 0 else 0
 th_orange_radius = np.mean(average_radiuses)
