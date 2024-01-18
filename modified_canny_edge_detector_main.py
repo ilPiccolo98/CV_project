@@ -7,7 +7,7 @@ from mced import mced
 from get_center import get_center
 from get_average_radius import get_average_radius
 
-path = './apple.jpg'
+path = './orange.jpg'
 img = Image.open(path)
 img = img.resize((251, 251))
 grayscale_image = ImageOps.grayscale(img)
@@ -16,7 +16,6 @@ segmented_image = image_segmentation(grayscale_image)
 res = mced(np.array(segmented_image), 1.5, (10, 10))
 (x_center, y_center) = get_center(res)
 average_radius = get_average_radius(res, x_center, y_center)
-print(average_radius)
 plt.subplot(121)
 plt.imshow(img)
 plt.subplot(122)

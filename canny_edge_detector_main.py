@@ -1,12 +1,22 @@
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 import matplotlib.pyplot as plt
+from image_segmentation import image_segmentation
+from get_color_channels import get_normalized_colors
 from ced import ced
+from get_center import get_center
+from get_average_radius import get_average_radius
 
 
 path = './orange.jpg'
-img = np.array(Image.open(path))
-res = ced(img, 'rgb')
+img = Image.open(path)
+img = img.resize((251, 251))
+grayscale_image = ImageOps.grayscale(img)
+red, green, blue = get_normalized_colors(np.array(img))
+segmented_image = image_segmentation(grayscale_image)
+res = ced(np.array(segmented_image))
+(x_center, y_center) = get_center(res)
+average_radius = get_average_radius(res, x_center, y_center)
 plt.subplot(121)
 plt.imshow(img)
 plt.subplot(122)
