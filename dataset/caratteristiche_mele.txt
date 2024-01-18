@@ -1,0 +1,35 @@
+File:  apple1.jpg --------------------
+Red intensity:  0.4192664326304572
+Green intensity:  0.2991817828079172
+Red intensity - Green intensity:  0.12008464982254002
+Average radius:  90.19609481472557
+
+File:  apple2.jpg --------------------
+Red intensity:  0.43137332961129404
+Green intensity:  0.28862367275471035
+Red intensity - Green intensity:  0.1427496568565837
+Average radius:  109.93704835370019
+
+File:  apple3.jpg --------------------
+Red intensity:  0.40631284198135853
+Green intensity:  0.29083148333838227
+Red intensity - Green intensity:  0.11548135864297626
+Average radius:  105.39392261693423
+
+File:  apple4.jpg --------------------
+Red intensity:  0.32768507655879836
+Green intensity:  0.37243011008358173
+Red intensity - Green intensity:  -0.04474503352478337
+Average radius:  86.85363683116945
+
+File:  apple5.jpg --------------------
+Red intensity:  0.3386013302199595
+Green intensity:  0.34123328689371396
+Red intensity - Green intensity:  -0.0026319566737544875
+Average radius:  45.96177327800505
+
+File:  apple6.jpg --------------------
+Red intensity:  0.3456167822178351
+Green intensity:  0.34895751059816243
+Red intensity - Green intensity:  -0.00334072838032734
+Average radius:  73.09301325001303
