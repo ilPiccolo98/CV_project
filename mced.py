@@ -6,9 +6,8 @@ from gaussian_blur import gaussianBlur
 from to_gray import togray
 
 
-def mced(image: np.ndarray, sigma: int | float, filter_shape, image_format='rgb', lowthreshold: float | int = 0.05, highthreshold: float | int = 0.09):
-    img = togray(image, image_format)
-    blurred = gaussianBlur(img, sigma, filter_shape=filter_shape)[1] / 255
+def mced(image: np.ndarray, sigma: int | float, filter_shape, lowthreshold: float | int = 0.05, highthreshold: float | int = 0.09):
+    blurred = gaussianBlur(image, sigma, filter_shape=filter_shape)[1] / 255
     squeezed_blurred = np.squeeze(blurred)
     padded = np.pad(squeezed_blurred, pad_width=1)
     G, theta = sobel_edge_detection(padded, "absolute")
