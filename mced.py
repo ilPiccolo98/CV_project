@@ -12,5 +12,5 @@ def mced(image: np.ndarray, sigma: int | float, filter_shape, lowthreshold: floa
     padded = np.pad(squeezed_blurred, pad_width=1)
     G, theta = sobel_edge_detection(padded, "absolute")
     img = non_max_suppression(G, theta)
-    img = threshold_hysteresis(img, lowthreshold, highthreshold * 1.562)
+    img = threshold_hysteresis(img, lowthreshold, lowthreshold * 1.562)
     return img
