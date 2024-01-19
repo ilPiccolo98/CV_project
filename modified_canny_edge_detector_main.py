@@ -36,7 +36,7 @@ for filename in files:
 th_lower_radius = min(average_radiuses) - 5
 th_upper_radius = max(average_radiuses) + 5
 th_upper_intensity_diff = max(diff_intensities)
-th_lower_intensity_diff = min(diff_intensities) - 0.05 if (min(diff_intensities) - 0.05) > 0 else 0
+th_lower_intensity_diff = min(diff_intensities)
 th_orange_radius = np.mean(average_radiuses)
 th_orange_red_intensity = np.mean(red) - 0.07
 print("th_orange_radius: ", th_orange_radius)
