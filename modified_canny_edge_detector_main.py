@@ -78,7 +78,7 @@ for filename in files:
     green_intensities.append(green)
     diff_intensities.append(red - green)
     segmented_image = image_segmentation(grayscale_image)
-    res = mced(np.array(segmented_image))
+    res = mced(np.array(segmented_image), 1.5, (10, 10))
     (x_center, y_center) = get_center(res)
     average_radius = get_average_radius(res, x_center, y_center)
     average_radiuses.append(average_radius)
