@@ -1,0 +1,35 @@
+File:  orange1.jpg --------------------
+Red intensity:  0.4381197804408394
+Green intensity:  0.33739013741791296
+Red intensity - Green intensity:  0.10072964302292642
+Average radius:  88.57482944492342
+
+File:  orange2.jpg --------------------
+Red intensity:  0.39808816519397755
+Green intensity:  0.3225171006798303
+Red intensity - Green intensity:  0.07557106451414725
+Average radius:  81.80501389110789
+
+File:  orange3.jpg --------------------
+Red intensity:  0.423378079943079
+Green intensity:  0.33665256794574877
+Red intensity - Green intensity:  0.08672551199733025
+Average radius:  85.24786813138734
+
+File:  orange4.jpg --------------------
+Red intensity:  0.3907096564791639
+Green intensity:  0.3284140213041267
+Red intensity - Green intensity:  0.06229563517503717
+Average radius:  77.9763404569093
+
+File:  orange5.jpg --------------------
+Red intensity:  0.42823688165804347
+Green intensity:  0.3336522614279392
+Red intensity - Green intensity:  0.09458462023010428
+Average radius:  87.67324142224271
+
+File:  orange6.jpg --------------------
+Red intensity:  0.4190400325496816
+Green intensity:  0.3526995438092008
+Red intensity - Green intensity:  0.06634048874048076
+Average radius:  85.61742297292948

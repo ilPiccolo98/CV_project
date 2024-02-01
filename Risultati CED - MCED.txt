@@ -84,14 +84,38 @@ orange8.jpg LARGE SOUR ORANGE
 
 
 MCED
-apple.jpg 
-apple2.jpg 
-apple3.jpg 
-apple4.jpg 
-apple5.jpg 
-apple6.jpg 
-orange.jpg 
-orange2.jpg 
-orange3.jpg 
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg GREEN SMALL APPLE
+apple6.jpg RED SMALL APPLE
+orange.jpg LARGE SWEET ORANGE
+orange2.jpg RED SMALL APPLE
+orange3.jpg LARGE SOUR ORANGE
+orange4.jpg LARGE SWEET ORANGE
+orange5.jpg SMALL SWEET ORANGE
+orange6.jpg LARGE SOUR ORANGE
+orange7.jpg LARGE SWEET ORANGE
+orange8.jpg LARGE SOUR ORANGE
+
+QUARTO ESPERIMENTO----------------
+CED
+apple.jpg RED SMALL APPLE
+apple2.jpg GREEN LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg RED SMALL APPLE
+orange.jpg RED LARGE APPLE X
+orange2.jpg
+orange3.jpg
 orange4.jpg
-orange5.jpg
+
+MCED
+apple.jpg RED SMALL APPLE
+apple2.jpg GREEN LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg RED SMALL APPLE
+orange.jpg SMALL SWEET ORANGE
+orange2.jpg SMALL SWEET ORANGE
+orange3.jpg SMALL SWEET ORANGE
+orange4.jpg LARGE SWEET ORANGE

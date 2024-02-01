@@ -13,7 +13,7 @@ from fruit_classification import fruit_classification
 
 #training phase
 print("TRAINING PHASE-----------------")
-path = "./dataset_1/Oranges"
+path = "./dataset_2/Oranges"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []
@@ -42,7 +42,7 @@ th_orange_red_intensity = np.mean(red) - 0.07
 print("th_orange_radius: ", th_orange_radius)
 print("th_orange_red_intensity: ", th_orange_red_intensity)
 
-path = "./dataset_1/Apples/green"
+path = "./dataset_2/Apples/green"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []
@@ -64,7 +64,7 @@ for filename in files:
 
 th_green_intensity = min(green_intensities)
 
-path = "./dataset_1/Apples/red"
+path = "./dataset_2/Apples/red"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []

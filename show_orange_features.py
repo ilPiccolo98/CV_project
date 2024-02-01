@@ -12,7 +12,7 @@ from os.path import isfile, join
 from fruit_recognition import fruit_recognition
 
 
-path = "./dataset/Oranges"
+path = "./test_set_2"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 for filename in files:
     print("")
@@ -25,8 +25,8 @@ for filename in files:
     print("Green intensity: ", green)
     print("Red intensity - Green intensity: ", red - green)
     segmented_image = image_segmentation(grayscale_image)
-    res = mced(np.array(segmented_image), 1.5, (10, 10))
-    #res = ced(np.array(segmented_image))
+    #res = mced(np.array(segmented_image), 1.5, (10, 10))
+    res = ced(np.array(segmented_image))
     (x_center, y_center) = get_center(res)
     average_radius = get_average_radius(res, x_center, y_center)
     print("Average radius: ", average_radius)
