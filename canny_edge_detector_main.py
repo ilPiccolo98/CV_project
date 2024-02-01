@@ -14,7 +14,7 @@ from fruit_classification import fruit_classification
 
 #training phase
 print("TRAINING PHASE-----------------")
-path = "./dataset/Oranges"
+path = "./dataset_1/Oranges"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []
@@ -34,8 +34,8 @@ for filename in files:
     average_radius = get_average_radius(res, x_center, y_center)
     average_radiuses.append(average_radius)
 
-th_lower_radius = min(average_radiuses) - 5
-th_upper_radius = max(average_radiuses) + 5
+th_lower_radius = min(average_radiuses)
+th_upper_radius = max(average_radiuses)
 th_upper_intensity_diff = max(diff_intensities)
 th_lower_intensity_diff = min(diff_intensities)
 th_orange_radius = np.mean(average_radiuses)
@@ -43,7 +43,7 @@ th_orange_red_intensity = np.mean(red) - 0.07
 print("th_orange_radius: ", th_orange_radius)
 print("th_orange_red_intensity: ", th_orange_red_intensity)
 
-path = "./dataset/Apples/green"
+path = "./dataset_1/Apples/green"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []
@@ -65,7 +65,7 @@ for filename in files:
 
 th_green_intensity = min(green_intensities)
 
-path = "./dataset/Apples/red"
+path = "./dataset_1/Apples/red"
 files = [f for f in listdir(path) if isfile(join(path, f))]
 red_intensities = []
 green_intensities = []

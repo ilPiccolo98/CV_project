@@ -1,0 +1,97 @@
+PRIMO ESPERIMENTO----------------------------------
+training set 3 mele rosse, 3 verdi e 6 arance
+Risultati CED
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg RED LARGE APPLE
+apple6.jpg RED SMALL APPLE
+apple7.jpg SMALL SWEET ORANGE X
+orange.jpg SMALL SWEET ORANGE
+orange2.jpg RED SMALL APPLE X
+orange3.jpg LARGE SWEET ORANGE
+orange4.jpg RED LARGE APPLE X
+orange5.jpg SMALL SWEET ORANGE
+orange6.jpg RED SMALL APPLE X
+orange7.jpg SMALL SWEET ORANGE
+
+SU 14 IMMAGINI 4 ERRORI
+
+Risultati MCED
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg RED LARGE APPLE
+apple6.jpg RED SMALL APPLE
+apple7.jpg SMALL SWEET ORANGE X
+orange.jpg LARGE SWEET ORANGE
+orange2.jpg RED SMALL APPLE X
+orange3.jpg LARGE SWEET ORANGE
+orange4.jpg RED LARGE APPLE X
+orange5.jpg SMALL SWEET ORANGE
+orange6.jpg RED SMALL APPLE X
+orange7.jpg SMALL SWEET ORANGE
+
+SU 14 IMMAGINI 4 ERRORI
+
+SECONDO ESPERIMENTO
+training set 5 mele rosse, 5 verdi e 10 arance
+CED
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg GREEN SMALL APPLE
+apple6.jpg RED SMALL APPLE
+orange.jpg LARGE SWEET ORANGE
+orange2.jpg RED SMALL APPLE X
+orange3.jpg LARGE SOUR ORANGE
+orange4.jpg SMALL SWEET ORANGE
+orange5.jpg SMALL SWEET ORANGE
+
+MCED
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg GREEN SMALL APPLE
+apple6.jpg RED SMALL APPLE
+orange.jpg LARGE SWEET ORANGE
+orange2.jpg RED SMALL APPLE X
+orange3.jpg LARGE SOUR ORANGE
+orange4.jpg SMALL SWEET ORANGE
+orange5.jpg SMALL SWEET ORANGE
+
+TERZO ESPERIMENTO CON SOGLIE DIVERSE-----------------------
+training set 5 mele rosse, 5 verdi e 10 arance
+CED
+apple.jpg RED SMALL APPLE
+apple2.jpg RED LARGE APPLE
+apple3.jpg GREEN SMALL APPLE
+apple4.jpg GREEN LARGE APPLE
+apple5.jpg GREEN SMALL APPLE
+apple6.jpg RED SMALL APPLE
+orange.jpg LARGE SWEET ORANGE
+orange2.jpg RED SMALL APPLE X
+orange3.jpg LARGE SOUR ORANGE
+orange4.jpg SMALL SWEET ORANGE
+orange5.jpg SMALL SWEET ORANGE
+orange6.jpg LARGE SOUR ORANGE
+orange7.jpg LARGE SWEET ORANGE
+orange8.jpg LARGE SOUR ORANGE
+
+
+MCED
+apple.jpg 
+apple2.jpg 
+apple3.jpg 
+apple4.jpg 
+apple5.jpg 
+apple6.jpg 
+orange.jpg 
+orange2.jpg 
+orange3.jpg 
+orange4.jpg
+orange5.jpg
