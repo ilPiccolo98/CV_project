@@ -105,10 +105,10 @@ apple.jpg RED SMALL APPLE
 apple2.jpg GREEN LARGE APPLE
 apple3.jpg GREEN SMALL APPLE
 apple4.jpg RED SMALL APPLE
-orange.jpg RED LARGE APPLE X
-orange2.jpg
-orange3.jpg
-orange4.jpg
+orange.jpg SMALL SWEET ORANGE
+orange2.jpg SMALL SWEET ORANGE
+orange3.jpg SMALL SWEET ORANGE
+orange4.jpg Red Small Apple X
 
 MCED
 apple.jpg RED SMALL APPLE
